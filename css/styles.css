@@ -629,19 +629,21 @@ img {
 }
 
 .mobal_close_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background:var(--border-width);
+  background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
-  margin-left: auto;
-  display: block;
 }
+
 .mobal_close_btn:hover,
-.mobal_close_btn:focus{
+.mobal_close_btn:focus {
   fill: var(--white);
-  background:var(--hover_blue);
-  
+  background-color: var(--hover_blue);
 }
 .symbol-def {
   height: 100%;
