@@ -115,6 +115,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   margin: 0 auto;
+  
 }
 .header-link {
   font-weight: 500;
@@ -148,12 +149,13 @@ img {
 
 .current{
   position: relative;
+  color: var(--blue);
 }
 .current::after {
   content:'';
   position: absolute;
   left: 0;
-  bottom: -24px;
+  bottom: -28px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -518,7 +520,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.products-item:hover .cover_wrap:before {
+.products-item:hover .cover_text {
   transform: translateY(0);
 }
 
@@ -566,36 +568,18 @@ img {
   display: flex;
 }
 
-.cover_wrap:before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--cower-wrap);
-  mix-blend-mode: normal;
-  transform: translateY(100%);
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .cover_text {
+  opacity: .9;
   position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
   line-height: 24px;
-  letter-spacing: 0.02em;
   color: var(--cower-wrap2);
-  transition-property: z-index;
+  transform: translateY(100%);
+  height: 100%;
+  background: var(--blue);
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -605,11 +589,12 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  
+  left: 0;
+  opacity: 1;
   width: 100%;
   height: 100%;
   background: var(--backdrop);
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity 1ms linear, visibility 250ms linear;
 }
 .mobal {
   position: absolute;
@@ -618,11 +603,11 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1) ;
-  transition: transform 300ms linear;
+  transition: transform 250ms linear;
   background:var(--mobal);
   box-shadow:var(--mobal-box-shadow);
   border-radius: 4px;
-  padding: 24px;
+  
 }
 .backdrop .is-hidden .mobal {
   transform: translate(-50%, -50%) scaleY(0) ;
@@ -630,14 +615,16 @@ img {
 
 .mobal_close_btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-50%, -50%);
+  top: 24px ;
+  right: 24px;
+  
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
+  
+  
 }
 
 .mobal_close_btn:hover,
@@ -647,7 +634,7 @@ img {
 }
 .symbol-def {
   height: 100%;
-    width: 100%;
+  width: 100%;
 }
 
 .is-hidden{
