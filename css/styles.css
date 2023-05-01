@@ -123,6 +123,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--grey);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .header-link:hover,
@@ -145,6 +146,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--header-info);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  
 }
 
 .current{
@@ -206,6 +209,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--white);
+  transition:background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .team_button:hover,
 .team_button:focus {
@@ -357,6 +361,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  
 }
 .social_link:hover,
 .social_link:focus {
@@ -374,7 +380,7 @@ img {
 .customers_titel {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -400,6 +406,8 @@ img {
   border: 1px solid var(--customers_border);
   border-radius: 4px;
   fill: var(--customers_border);
+  transition: fill  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  
 }
 .customers_link:hover,
 .customers_link:focus {
@@ -443,7 +451,7 @@ img {
 .social_subtitle {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
 }
@@ -480,6 +488,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  
+
 }
 .footer_social_link:hover,
 .footer_social_link:focus {
@@ -502,6 +513,7 @@ img {
   border: 1px solid var(--border-width);
   border-radius: 4px;
   color: var(--blue);
+  transition: color,box-shadow,border-color,background-color,cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .btn:hover,
 .btn:focus {
@@ -557,6 +569,8 @@ img {
 }
 .project_card {
   display: block;
+  transition: box-shadow  cubic-bezier(0.4, 0, 0.2, 1) 250ms ;
+  
 }
 .project_card:hover,
 .project_card:focus {
@@ -581,7 +595,7 @@ img {
   background: var(--blue);
   transition-property: transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 /* ======== backdrop ========= */
@@ -595,6 +609,8 @@ img {
   height: 100%;
   background: var(--backdrop);
   transition: opacity 1ms linear, visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobal {
   position: absolute;
@@ -602,29 +618,30 @@ img {
   min-height: 576px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1) ;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0) ;
   transition: transform 250ms linear;
-  background:var(--mobal);
+  background-color:var(--mobal);
   box-shadow:var(--mobal-box-shadow);
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.backdrop .is-hidden .mobal {
-  transform: translate(-50%, -50%) scaleY(0) ;
+.backdrop.is-hidden .mobal {
+  transform: translate(-50%, -50%) scaleY(0) rotate(-90deg) ;
+  
 }
 
 .mobal_close_btn {
   position: absolute;
   top: 24px ;
   right: 24px;
-  
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
-  
-  
+  transition: fill,background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms ;
+   
 }
 
 .mobal_close_btn:hover,
