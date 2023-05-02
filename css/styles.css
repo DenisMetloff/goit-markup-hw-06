@@ -1,14 +1,16 @@
 /** @format */
 :root {
-  --portfolio-btn-hover: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
-  --project_card-focys:0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --mobal_label: #8e8f99;
+  --mobal_titel: #2e2f42;
+  --portfolio-btn-hover: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --project_card-focys: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   --backdrop: rgba(46, 47, 66, 0.4);
-  --mobal-close:rgba(0, 0, 0, 0.1);
-  --mobal-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-  --mobal:#fcfcfc;
+  --mobal-close: rgba(0, 0, 0, 0.1);
+  --mobal-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --mobal: #fcfcfc;
   --cower-wrap: #4d5ae5;
   --cower-wrap2: #f4f4fd;
   --hover-footer-social: #31d0aa;
@@ -58,7 +60,7 @@ ul {
 .link {
   text-decoration: none;
 }
-.no_scroll{
+.no_scroll {
   overflow: hidden;
 }
 button {
@@ -115,7 +117,6 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   margin: 0 auto;
-  
 }
 .header-link {
   font-weight: 500;
@@ -147,15 +148,14 @@ img {
   letter-spacing: 0.02em;
   color: var(--header-info);
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
 }
 
-.current{
+.current {
   position: relative;
   color: var(--blue);
 }
 .current::after {
-  content:'';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -28px;
@@ -163,8 +163,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--hover-social);
-
-
 }
 
 /* ======== section1 ======= */
@@ -209,7 +207,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--white);
-  transition:background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .team_button:hover,
 .team_button:focus {
@@ -362,7 +360,6 @@ img {
   align-items: center;
   justify-content: center;
   transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
 }
 .social_link:hover,
 .social_link:focus {
@@ -406,8 +403,7 @@ img {
   border: 1px solid var(--customers_border);
   border-radius: 4px;
   fill: var(--customers_border);
-  transition: fill  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .customers_link:hover,
 .customers_link:focus {
@@ -467,7 +463,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color:var(--white);
+  color: var(--white);
   margin-bottom: 16px;
 }
 .footer_social_network {
@@ -488,9 +484,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
-
+  transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .footer_social_link:hover,
 .footer_social_link:focus {
@@ -513,7 +507,8 @@ img {
   border: 1px solid var(--border-width);
   border-radius: 4px;
   color: var(--blue);
-  transition: color,box-shadow,border-color,background-color,cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color, box-shadow, border-color, background-color,
+    cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .btn:hover,
 .btn:focus {
@@ -569,8 +564,7 @@ img {
 }
 .project_card {
   display: block;
-  transition: box-shadow  cubic-bezier(0.4, 0, 0.2, 1) 250ms ;
-  
+  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .project_card:hover,
 .project_card:focus {
@@ -583,7 +577,7 @@ img {
 }
 
 .cover_text {
-  opacity: .9;
+  opacity: 0.9;
   position: absolute;
   padding-top: 40px;
   padding-left: 32px;
@@ -595,7 +589,7 @@ img {
   background: var(--blue);
   transition-property: transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======== backdrop ========= */
@@ -618,30 +612,27 @@ img {
   min-height: 576px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scaleY(1) rotate(0) ;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
   transition: transform 250ms linear;
-  background-color:var(--mobal);
-  box-shadow:var(--mobal-box-shadow);
+  background-color: var(--mobal);
+  box-shadow: var(--mobal-box-shadow);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .backdrop.is-hidden .mobal {
-  transform: translate(-50%, -50%) scaleY(0) rotate(-90deg) ;
-  
+  transform: translate(-50%, -50%) scaleY(0) rotate(-90deg);
 }
 
 .mobal_close_btn {
   position: absolute;
-  top: 24px ;
+  top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
-  transition: fill,background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms ;
-   
+  transition: fill, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .mobal_close_btn:hover,
@@ -654,8 +645,73 @@ img {
   width: 100%;
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.mobal_titel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--mobal_titel);
+  margin-top: 72px;
+  margin-bottom: 16px;
+  
+}
+.mobal_input {
+  outline: transparent;
+  width: 360px;
+  height: 40px;
+  left: 0px;
+  top: 84px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-left: 24px;
+  padding-left: 30px;
+}
+.mobal_input:focus {
+  border-color: #4d5ae5;
+}
+.mobal_input:focus + .mobal_icon{
+  fill: #4d5ae5;
+}
+
+.mobal_buytton {
+}
+.mobal_fialed {
+  margin-bottom: 10px;
+  
+  
+}
+.mobal_label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: var(--mobal_label);
+  
+}
+.mobal_label {
+  margin-bottom: 4px;
+  margin-left: 24px;
+  
+}
+.mobal_icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 24px;
+  fill:black;
+  width: 21px;
+  
+}
+
+.input_wrap {
+  position: relative;
+  
 }
