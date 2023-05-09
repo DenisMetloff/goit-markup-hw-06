@@ -660,7 +660,6 @@ img {
   color: var(--mobal_titel);
   margin-top: 72px;
   margin-bottom: 16px;
-  
 }
 .mobal_input {
   outline: transparent;
@@ -676,16 +675,12 @@ img {
 .mobal_input:focus {
   border-color: #4d5ae5;
 }
-.mobal_input:focus + .mobal_icon{
+.mobal_input:focus + .mobal_icon {
   fill: #4d5ae5;
 }
 
-.mobal_buytton {
-}
 .mobal_fialed {
   margin-bottom: 10px;
-  
-  
 }
 .mobal_label {
   font-weight: 400;
@@ -693,12 +688,10 @@ img {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--mobal_label);
-  
 }
 .mobal_label {
   margin-bottom: 4px;
   margin-left: 24px;
-  
 }
 .mobal_icon {
   position: absolute;
@@ -706,12 +699,62 @@ img {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 24px;
-  fill:black;
+  fill: black;
   width: 21px;
-  
 }
 
 .input_wrap {
   position: relative;
+}
+.mobal_textara {
+  width: 360px;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 10px 24px;
+  resize: none;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.mobal_checkbox {
+  margin-left: 24px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-left: 20px;
+}
+.checkbox_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-left: 8px;
   
+
+}
+.mobal_buytton {
+  width: 169px;
+  height: 56px;
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  margin:24px 120px 24px 120px
+}
+.mobal_buytton:hover,
+.mobal_buytton:focus {
+  background-color: var(--hover_blue);
 }
