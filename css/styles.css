@@ -543,10 +543,14 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  background: #4d5ae5;
+  background: var(--blue);
   border-radius: 4px;
   color: var(--white);
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.subscribe_button:hover,
+.subscribe_button:focus{
+  background: var(--hover_blue);
 }
 
 /*========= portfolio======== */
