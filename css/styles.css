@@ -63,6 +63,19 @@ ul {
 .no_scroll {
   overflow: hidden;
 }
+.visually_hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
 button {
   cursor: pointer;
 }
@@ -549,7 +562,7 @@ img {
   transition: background cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .subscribe_button:hover,
-.subscribe_button:focus{
+.subscribe_button:focus {
   background: var(--hover_blue);
 }
 
@@ -671,6 +684,7 @@ img {
   min-height: 576px;
   left: 50%;
   top: 50%;
+  padding: 24px;
   transform: translate(-50%, -50%) scaleY(1) rotate(0);
   transition: transform 250ms linear;
   background-color: var(--mobal);
@@ -683,11 +697,11 @@ img {
 }
 
 .mobal_close_btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+  display: block;
+  margin-left: auto;
   width: 24px;
   height: 24px;
+  margin-bottom: 24px;
   border-radius: 50%;
   background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
@@ -711,89 +725,92 @@ img {
 }
 
 .mobal_titel {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--mobal_titel);
-  margin-top: 72px;
+  color: var(--grey);
   margin-bottom: 16px;
 }
+.mobal_field {
+  margin-bottom: 8px;
+}
 .mobal_input {
-  outline: transparent;
-  width: 360px;
-  height: 40px;
-  left: 0px;
-  top: 84px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-left: 24px;
+  width: 360px;
+  height: 40px;
+  box-sizing: border-box;
   padding-left: 30px;
 }
 .mobal_input:focus {
-  border-color: #4d5ae5;
+  border-color: var(--blue);
 }
 .mobal_input:focus + .mobal_icon {
-  fill: #4d5ae5;
-}
-
-.mobal_fialed {
-  margin-bottom: 10px;
-}
-.mobal_label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  color: var(--mobal_label);
-}
-.mobal_label {
-  margin-bottom: 4px;
-  margin-left: 24px;
+  fill: var(--blue);
 }
 .mobal_icon {
   position: absolute;
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 24px;
-  fill: black;
-  width: 21px;
 }
-
 .input_wrap {
   position: relative;
 }
-.mobal_textara {
+
+.mobal_label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--customers_border);
+}
+.mobal_textarea {
   width: 360px;
   height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
-  font-size: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin: 10px 24px;
+  padding: 10px;
   resize: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
-.checkbox {
+.input_check {
+  width: 16px;
+  height: 16px;
+  
+
+}
+.checkbox{
   display: flex;
   align-items: center;
 }
-.mobal_checkbox {
-  margin-left: 24px;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  margin-left: 20px;
-}
-.checkbox_text {
+.check_text {
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 14px;
   letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-left: 8px;
+  color:var(--mobal_label);
+  margin-left: 6px;
+}
+.linc_check {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+  color:var(--blue);
+  margin-left: 2px;
 }
 .mobal_buytton {
   width: 169px;
@@ -802,14 +819,12 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: var(--white);
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  margin: 24px 120px 24px 120px;
+  margin: 24px 95px;
 }
 .mobal_buytton:hover,
 .mobal_buytton:focus {
