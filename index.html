@@ -464,22 +464,22 @@
     <div class="is-hidden backdrop" data-modal>
       <div class="mobal">
         <button type="button" data-modal-close class="mobal_close_btn">
-          <svg class="symbol-def" width="18" hidden="24">
+          <svg class="symbol-def" width="18"  height="24">
             <use href="./images/icon4.svg#icon-Vector"></use>
           </svg>
         </button>
         <p class="mobal_titel">Leave your contacts and we will call you back</p>
         <form class="mobal_form">
           <div class="mobal_field">
-            <label form="user-name" class="mobal_label">Name</label>
+            <label for="user-name" class="mobal_label">Name</label>
             <div class="input_wrap">
               <input
                 id="user-name"
-                type="name"
+                type="text"
                 name="user-name"
                 class="mobal_input"
-                placeholder=" "
-                required
+                
+                
               />
               <svg class="mobal_icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-user"></use>
@@ -488,7 +488,7 @@
           </div>
 
           <div class="mobal_field">
-            <label form="user-phone" class="mobal_label">Phone</label>
+            <label for="user-phone" class="mobal_label">Phone</label>
             <div class="input_wrap">
               <input
                 id="user-phone"
@@ -505,7 +505,7 @@
           </div>
 
           <div class="mobal_field">
-            <label form="user-email" class="mobal_label">Email</label>
+            <label for="user-email" class="mobal_label">Email</label>
             <div class="input_wrap">
               <input
                 id="user-email"
@@ -515,13 +515,13 @@
                 placeholder=" "
                 required
               />
-              <svg class="mobal_icon" width="30" height="30">
+              <svg class="mobal_icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="mobal_field">
-            <label form="user-text" class="mobal_label">Comment</label>
+            <label for="user-text" class="mobal_label">Comment</label>
             <textarea
               placeholder="Text input"
               name="user-text"
@@ -529,10 +529,10 @@
               class="mobal_textarea"
             ></textarea>
           </div>
-          <div class="mobal_field checkbox">
+          <div class="mobal_field">
             <input
               type="checkbox"
-              class="input_check"
+              class="input_check visually_hidden"
               name="privacy"
               id="privacy"
               value="tru"
