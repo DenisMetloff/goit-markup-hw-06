@@ -565,6 +565,9 @@ img {
 .subscribe_button:focus {
   background: var(--hover_blue);
 }
+.subscribe_icon{
+  margin-left: 16px;
+}
 
 /*========= portfolio======== */
 .button_list {
