@@ -750,6 +750,9 @@ img {
 .mobal_fielde {
   margin-bottom: 16px;
 }
+.mobal_fieldd{
+  margin-bottom: 24px; 
+}
 .mobal_input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
