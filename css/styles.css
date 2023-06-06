@@ -525,11 +525,11 @@ img {
   width: 264px;
   height: 40px;
   font-size: 12px;
-  line-height: 1.5; 
-  letter-spacing: 0.04em; 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white);
   background: var(--mobal_titel);
-  background-color: transparent; 
+  background-color: transparent;
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -553,7 +553,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 165px; 
+  min-width: 165px;
   gap: 16px;
   width: 165px;
   height: 40px;
@@ -571,7 +571,7 @@ img {
 .subscribe_button:focus {
   background: var(--hover_blue);
 }
-.subscribe_icon{
+.subscribe_icon {
   margin-left: 16px;
 }
 
@@ -678,11 +678,11 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  padding: 72px 24px 24px;
   left: 0;
   opacity: 1;
   width: 100%;
   height: 100%;
+  
   background: var(--backdrop);
   transition: opacity 1ms linear, visibility 250ms linear;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -694,7 +694,7 @@ img {
   min-height: 576px;
   left: 50%;
   top: 50%;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%) scaleY(1) rotate(0);
   transition: transform 250ms linear;
   background-color: var(--mobal);
@@ -707,8 +707,9 @@ img {
 }
 
 .mobal_close_btn {
-  position:absolute;
+  position: absolute;
   right: 24px;
+  top:24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -746,15 +747,15 @@ img {
 .mobal_field {
   margin-bottom: 8px;
 }
-.mobal_fielde{
-  margin-bottom: 16px ;
+.mobal_fielde {
+  margin-bottom: 16px;
 }
 .mobal_input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  background-color: transparent; 
+  background-color: transparent;
   box-sizing: border-box;
   padding-left: 38px;
   outline: transparent;
@@ -763,7 +764,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobal_input:focus {
   border-color: var(--blue);
@@ -775,10 +776,10 @@ img {
   position: absolute;
   left: 5px;
   top: 50%;
-  left: 16px ;
+  left: 16px;
   transform: translateY(-50%);
   margin-left: 6px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input_wrap {
   position: relative;
@@ -789,7 +790,7 @@ img {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17; 
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--customers_border);
 }
@@ -800,7 +801,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding: 8px 16px;
-  background-color: transparent; 
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
   font-weight: 400;
@@ -821,7 +822,7 @@ img {
   align-items: center;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17; 
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--mobal_label);
   display: flex;
@@ -842,20 +843,21 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.mobal_field{
+.mobal_field {
   margin-bottom: 24px;
 }
-.label_span{
+.label_span {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4); 
-  border-radius: 2px; 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  fill: transparent; 
-
+  fill: transparent;
 }
 
 .linc_check {
@@ -875,17 +877,16 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  letter-spacing: 0.04em ;
+  letter-spacing: 0.04em;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--white);
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
- display: block;
- margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 .mobal_buytton:hover,
 .mobal_buytton:focus {
   background-color: var(--hover_blue);
 }
-
