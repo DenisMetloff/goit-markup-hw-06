@@ -752,13 +752,14 @@ img {
   width: 360px;
   height: 40px;
   box-sizing: border-box;
-  padding-left: 35px;
+  padding-left: 38px;
   outline: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .mobal_input:focus {
   border-color: var(--blue);
@@ -770,8 +771,10 @@ img {
   position: absolute;
   left: 5px;
   top: 50%;
+  left: 16px ;
   transform: translateY(-50%);
   margin-left: 6px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .input_wrap {
   position: relative;
@@ -782,7 +785,7 @@ img {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17; 
   letter-spacing: 0.04em;
   color: var(--customers_border);
 }
