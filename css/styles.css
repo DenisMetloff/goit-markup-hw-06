@@ -678,6 +678,7 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
+  padding: 72px 24px 24px;
   left: 0;
   opacity: 1;
   width: 100%;
@@ -706,11 +707,10 @@ img {
 }
 
 .mobal_close_btn {
-  display: block;
-  margin-left: auto;
+  position:absolute;
+  right: 24px;
   width: 24px;
   height: 24px;
-  margin-bottom: 24px;
   border-radius: 50%;
   background-color: var(--border-width);
   border: 1px solid var(--mobal-close);
