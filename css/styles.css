@@ -744,7 +744,7 @@ img {
   margin-bottom: 16px;
 }
 .mobal_field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .mobal_input {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -793,13 +793,15 @@ img {
   width: 360px;
   height: 120px;
   outline: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
-  padding: 10px;
+  padding: 8px 16px;
+  background-color: transparent; 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.16;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
@@ -815,7 +817,7 @@ img {
   align-items: center;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17; 
   letter-spacing: 0.04em;
   color: var(--mobal_label);
   display: flex;
