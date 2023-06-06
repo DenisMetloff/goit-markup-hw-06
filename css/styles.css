@@ -744,7 +744,10 @@ img {
   margin-bottom: 16px;
 }
 .mobal_field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+.mobal_fielde{
+  margin-bottom: 16px ;
 }
 .mobal_input {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -842,6 +845,18 @@ img {
 .mobal_field{
   margin-bottom: 24px;
 }
+.label_span{
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 2px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  fill: transparent; 
+
+}
 
 .linc_check {
   font-weight: 400;
@@ -873,3 +888,4 @@ img {
 .mobal_buytton:focus {
   background-color: var(--hover_blue);
 }
+
