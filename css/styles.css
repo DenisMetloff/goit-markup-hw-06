@@ -787,6 +787,7 @@ img {
 }
 .input_wrap {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .mobal_label {
