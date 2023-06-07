@@ -818,10 +818,7 @@ img {
 .mobal_textarea:focus {
   border-color: var(--blue);
 }
-.input_check {
-  width: 16px;
-  height: 16px;
-}
+
 
 .check_text {
   font-size: 12px; 
@@ -830,14 +827,12 @@ img {
   color:var(--mobal_label)
   
 }
-.check_text::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  margin-right: 10px;
+.input_check:checked{
+  background-color:var(--hover-social);
+  fill:#ffffff;
+  border: none;
 }
+
 
 .label_span {
   display: inline-flex;
