@@ -824,30 +824,13 @@ img {
 }
 
 .check_text {
-  align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--mobal_label);
-  display: flex;
-  align-items: center;
+  font-size: 12px; 
+  line-height: 1.17; 
+  letter-spacing: 0.04em; 
+  color:var(--mobal_label)
+  
 }
-.check_text::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  margin-right: 10px;
-}
-.input_check:checked + .check_text::before {
-  background-color: var(--blue);
-  border: none;
-  background-image: url(../images/www1.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 .label_span {
   width: 16px;
@@ -875,7 +858,7 @@ img {
 .mobal_buytton {
   height: 56px;
   min-width: 169px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
