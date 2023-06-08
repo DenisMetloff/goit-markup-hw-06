@@ -829,7 +829,8 @@ img {
   
 }
 
-.input_check:checked + .check_text > .label_span{
+
+.input_check:checked + .check_text > .label_span {
   background-color:var(--hover_blue) ;
   border: none;
   fill:var(--white);
