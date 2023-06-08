@@ -74,7 +74,7 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  visibility: hidden;
+  
 }
 button {
   cursor: pointer;
@@ -829,10 +829,11 @@ img {
   
 }
 
-.input_check:checked {
-  background-color:var(--hover-social);
-  fill:#ffffff;
+.input_check:checked + .check_text > .label_span{
+  background-color:var(--hover_blue) ;
   border: none;
+  fill:var(--white);
+  border-color:var(--hover-social);
 }
 
 
