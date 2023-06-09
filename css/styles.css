@@ -804,7 +804,7 @@ img {
   width: 360px;
   height: 120px;
   outline: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4) ;
   border-radius: 4px;
   padding: 8px 16px;
   background-color: transparent;
@@ -833,7 +833,7 @@ img {
 .input_check:checked + .check_text > .label_span {
   background-color:var(--hover_blue) ;
   border: none;
-  fill:var(--aside-white);
+  fill:var( --cower-wrap2);
   border-color:var(--hover-social);
 }
 
